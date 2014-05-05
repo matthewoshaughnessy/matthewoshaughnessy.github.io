@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Matthew O&#39;Shaughnessy by matthewoshaughnessy</title>
+    <title>Matthew O&#39;Shaughnessy</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -16,10 +16,18 @@
     <div class="wrapper">
       <header>
         <h1>Matthew O&#39;Shaughnessy</h1>
-        <p>Electrical Engineering, Georgia Institute of Technology</p>
+        <p> School of Electrical &amp; Computer Engineering <br> Georgia Institute of Technology</p>
+
+        <p class="view">
+        matthewoshaughnessy@gatech.edu
+        </p>
 
 
-        <p class="view"><a href="https://github.com/matthewoshaughnessy">View My GitHub Profile</a></p>
+        <p class="view">
+        <a href="resume/moshaughnessy0514.pdf">Resume (updated May 2014)</a><br>
+        <a href="https://github.com/matthewoshaughnessy">GitHub Profile</a>
+        <br>
+        </p>
 
       </header>
       <section>
@@ -30,14 +38,9 @@
 <a name="personal-projects" class="anchor" href="#personal-projects"><span class="octicon octicon-link"></span></a>Personal Projects</h1>
 
 <h3>
-<a name="in-progress-intelligent-quadrocopter" class="anchor" href="#in-progress-intelligent-quadrocopter"><span class="octicon octicon-link"></span></a>In progress: Intelligent Quadrocopter</h3>
-
-<p>With the salary from my co-op this semester I'll finally be able to build a quadrocopter. When I finish the basic quadrocoptor, I hope to experiment with image processing and computer vision via an on-board CMOS camera.</p>
-
-<h3>
 <a name="motion-controlled-rc-helicopter" class="anchor" href="#motion-controlled-rc-helicopter"><span class="octicon octicon-link"></span></a>Motion-Controlled RC Helicopter</h3>
 
-<p>My roommate and I got <a href="http://www.amazon.com/Syma-S107-S107G-Helicopter-Red/dp/B004A8ZRBA/ref=sr_1_5?ie=UTF8&amp;qid=1399236923&amp;sr=8-5">these $20 RC Helicopter</a>, which are a lot of fun to fly, but the RC controllers they shipped with are hard to use. Using an Arduino-based logic analyzer, an IR receiver, and blog posts from people reverse-engineering the control signals of similar helicopters, I determined the control signals for my helicopter and created a new controller with an accelerometer and gyroscope that uses tilt controls to fly the helicopter.</p>
+<p>My roommate and I got <a href="http://www.amazon.com/Syma-S107-S107G-Helicopter-Red/dp/B004A8ZRBA/ref=sr_1_5?ie=UTF8&amp;qid=1399236923&amp;sr=8-5">these $20 RC Helicopter</a>, which are a lot of fun to fly, but the RC controllers they shipped with are hard to use. Using an Arduino-based logic analyzer, an IR receiver, and blog posts from others reverse-engineering the control signals of similar helicopters, I determined the control signals for my helicopter and created a new controller with an accelerometer and gyroscope that uses tilt controls to fly the helicopter.</p>
 
 <ul>
 <li>Source and project details: <a href="">link</a>
@@ -48,12 +51,26 @@
 
 <p>When my registration slot for Fall of my second year opened, every ECE class I had the prerequisites for was full. To prevent the same from happening the next semester (and, of course, avoid early morning sections), I made a command-line utility to monitor registration numbers and send me text alerts when sections opened up. My program features a custom logging utility and network analytics that export to MATLAB for visualization.</p>
 
+<a href="https://github.com/matthewoshaughnessy/gtregalert#sample-output"><img src="https://github.com/matthewoshaughnessy/gtregalert/raw/master/sampleoutput.JPG" alt="Sample Output"></a>
+
 <ul>
 <li>Source: <a href="https://github.com/matthewoshaughnessy/gtregalert#gtregalert">link</a>
 </li>
 <li>Languages: Java, MATLAB (network latency visualization), <a href="jsoup.org">jsoup</a> and <a href="https://code.google.com/p/google-voice-java/">google-voice-java</a> libraries</li>
-</ul><hr><h1>
+</ul>
+
+<h3>
+<a name="in-progress-intelligent-quadrocopter" class="anchor" href="#in-progress-intelligent-quadrocopter"><span class="octicon octicon-link"></span></a>In progress: Intelligent Quadrocopter</h3>
+
+<p>With the salary from my co-op this semester I'll finally be able to build a quadrocopter. When I finish the basic quadrocoptor, I hope to experiment with image processing and computer vision via an on-board CMOS camera.</p>
+
+
+<hr>
+
+<h1>
 <a name="extracurricular-projects" class="anchor" href="#extracurricular-projects"><span class="octicon octicon-link"></span></a>Extracurricular Projects</h1>
+
+
 
 <h3>
 <a name="cs-1371-practice-test-question-bank" class="anchor" href="#cs-1371-practice-test-question-bank"><span class="octicon octicon-link"></span></a>CS 1371 Practice Test Question Bank</h3>
@@ -69,10 +86,20 @@
 
 <p>With my undergraduate research group, I implemented neural networks in MATLAB and Python (using NumPy and SciPy) for classification of data from a multi-modal accessibility device. Individually, I implemented performance-intensive portions of the training algorithm in CUDA C++. Unfortunately, the data transfer time between the CPU and GPU resulted in execution times longer than purely-CPU execution times when tested with handwritten digit classification, but GPU implementation will be faster for data sets with larger data sample sizes.</p>
 
+<ul>
+<li> <a href="images/ors-dbn-poster.jpg">Poster presented at Georgia Tech Undergraduate Research Symposium, April 2014</a>
+</li>
+</ul>
+
 <h3>
 <a name="mapreduceapache-hadoop-simulator" class="anchor" href="#mapreduceapache-hadoop-simulator"><span class="octicon octicon-link"></span></a>MapReduce/Apache Hadoop Simulator</h3>
 
 <p>With my undergraduate research group, I wrote a simulator for Apache Hadoop to allow estimation of MapReduce job times before execution. I was largely responsible for the design and implementation of the distributed storage component of the simulator, which allowed users to estimate execution times of different network topologies.</p>
+
+<ul>
+<li> <a href="images/ors-mrsim-poster.jpg">Poster presented at ORS Research Competition, April 2013</a>
+</li>
+</ul>
 
 <hr><h1>
 <a name="class-projects" class="anchor" href="#class-projects"><span class="octicon octicon-link"></span></a>Class Projects</h1>
@@ -126,12 +153,13 @@
 <a name="java-implementation-of-basic-data-structures" class="anchor" href="#java-implementation-of-basic-data-structures"><span class="octicon octicon-link"></span></a>Java Implementation of Basic Data Structures</h3>
 
 <p>(CS 1332 - Data Structures &amp; Algorithms) Implemented stacks, queues, priority queues, singly and doubly linked lists, binary, balanced, and self-balancing trees, hashmaps, basic sorting algorithms, and graph search algorithms in Java.</p>
+
+<p><small>Hosted on GitHub Pages &mdash; Based on theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+
+
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+
   </body>
 </html>
