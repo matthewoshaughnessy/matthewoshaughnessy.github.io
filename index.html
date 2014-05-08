@@ -16,7 +16,8 @@
     <div class="wrapper">
       <header>
         <h1>Matthew O&#39;Shaughnessy</h1>
-        <p> School of Electrical &amp; Computer Engineering <br> Georgia Institute of Technology</p>
+        <p>School of Electrical &amp; Computer Engineering <br>
+        Georgia Institute of Technology</p>
 
         <p class="view">
         matthewoshaughnessy@gatech.edu
@@ -26,20 +27,17 @@
         <p class="view">
         <a href="resume/moshaughnessy0514.pdf">Resume (updated May 2014)</a><br>
         <a href="https://github.com/matthewoshaughnessy">GitHub Profile</a>
-        <br>
+        <br><br>
+        Jump to: <br>
+		 - <a href="#personal-projects">Personal Projects</a><br>
+		 - <a href="#extracurricular-projects">Extracurricular Projects</a><br>
+		 - <a href="#class-projects">Class Projects</a><br>
         </p>
 
       </header>
       <section>
         <h1>
 <a name="welcome" class="anchor" href="#welcome"><span class="octicon octicon-link"></span></a>Welcome!</h1>
-<hr>
-Jump to: <br>
-<ul>
-<li><a href="#personal-projects">Personal Projects</a></li>
-<li><a href="#extracurricular-projects">Extracurricular Projects</a></li>
-<li><a href="#class-projects">Class Projects</a></li>
-</ul>
 
 <hr><h1>
 <a name="personal-projects" class="anchor" href="#personal-projects"><span class="octicon octicon-link"></span></a>Personal Projects</h1>
@@ -47,7 +45,7 @@ Jump to: <br>
 <h3>
 <a name="motion-controlled-rc-helicopter" class="anchor" href="#motion-controlled-rc-helicopter"><span class="octicon octicon-link"></span></a>Motion-Controlled RC Helicopter</h3>
 
-<p>My roommate and I got <a href="http://www.amazon.com/Syma-S107-S107G-Helicopter-Red/dp/B004A8ZRBA/ref=sr_1_5?ie=UTF8&amp;qid=1399236923&amp;sr=8-5">these $20 RC Helicopters</a>, which are a lot of fun to fly, but the RC controllers they shipped with are hard to use. Using an Arduino-based logic analyzer, an IR receiver, and blog posts from others reverse-engineering the control signals of similar helicopters, I determined the control signals for my helicopter and created a new controller with an accelerometer and gyroscope that uses tilt controls to fly the helicopter.</p>
+<p>My roommate and I got <a href="http://www.amazon.com/Syma-S107-S107G-Helicopter-Gyro/dp/B00F4WMAAW/ref=pd_sim_t_5?ie=UTF8&refRID=1WRZ9T5VVNX9P34X3CEY">these $20 RC Helicopters</a>, which are a lot of fun to fly, but the RC controllers they shipped with are hard to use. Using an IR receiver and an Arduino-based logic analyzer, I determined the control signals for my helicopter and created a new controller with an accelerometer and gyroscope that uses tilt controls to fly the helicopter.</p>
 
 <ul>
 <li>Source and project details: <a href="">link</a>
@@ -69,12 +67,14 @@ Jump to: <br>
 <h3>
 <a name="in-progress-beat-detection-tracking" class="anchor" href="#in-progress-beat-detection-tracking"><span class="octicon octicon-link"></span></a>In progress: Beat Detection &amp; Tracking</h3>
 
-<p></p>
+<p>Taking inspiration from <a href="http://mykal.free.fr/synthesis/detectrythm.pdf">this paper</a>, I wrote a program to decect and track the beat in music. For many overlapping frames in an input song, I applied a filterbank and for each frequency band, calculated the signal envelope by applying the Hilbert transform using a half-hanning window as a low-pass filter. Next, I applied a first-difference filter and rectified the result, giving me a signal that had large peaks at times where there was a large increase in sound energy. Finally, a comb filter was used to detect the tempo of the music. In the future, I would like to use linear prediction to prevent the algorithm from switching between the tempo and half/double the tempo.</p>
+
+<a href="https://github.com/matthewoshaughnessy/tempotracking"><img src="https://github.com/matthewoshaughnessy/tempotracking/blob/master/katyperryresults2.JPG?raw=true" alt="Sample Output"></a>
 
 <ul>
 <li>Source and project details: <a href="https://github.com/matthewoshaughnessy/tempotracking">link</a>
 </li>
-<li>Languages: MATLAB, Signal Processing and DSP Toolboxes
+<li>Languages: MATLAB, Signal Processing Toolbox, DSP Toolbox
 </li>
 </ul>
 
@@ -144,7 +144,7 @@ Jump to: <br>
 <h3>
 <a name="pipelined-mips-processor" class="anchor" href="#pipelined-mips-processor"><span class="octicon octicon-link"></span></a>Pipelined MIPS Processor</h3>
 
-<p>(ECE 3056 - Computer Architecture) Modified existing VHDL code for a single-stage MIPS processor to create a five-stage pipelined processor. Significant debugging and testing with ModelSim.</p>
+<p>(ECE 3056 - Computer Architecture) I modified existing VHDL code for a single-stage MIPS processor to create a five-stage pipelined processor and added hardware for forwarding and pipeline flushing to handle branch and data hazards. Most of the work for the project involved debugging and testing at the waveform level, which I did with ModelSim.</p>
 
 <h3>
 <a name="analog-electronics-lab" class="anchor" href="#analog-electronics-lab"><span class="octicon octicon-link"></span></a>Analog Electronics Lab</h3>
@@ -154,17 +154,17 @@ Jump to: <br>
 <h3>
 <a name="embedded-battleship-game" class="anchor" href="#embedded-battleship-game"><span class="octicon octicon-link"></span></a>Embedded Battleship Game</h3>
 
-<p>(ECE 2035 - Hardware/Software Programming) Created an embedded battleship player in C++ and ARM assembly on the mbed microcontroller that played the most statistically optimal game of battleship against an opponent provided to us.</p>
+<p>(ECE 2035 - Hardware/Software Programming) I created an embedded battleship player in C++ and ARM assembly on the mbed microcontroller that played the most statistically optimal game of battleship against an opponent provided to us. I used MATLAB to test and debug the algorithm.</p>
 
 <h3>
 <a name="efficient-tile-puzzle-solver" class="anchor" href="#efficient-tile-puzzle-solver"><span class="octicon octicon-link"></span></a>Efficient Tile Puzzle Solver</h3>
 
-<p>(ECE 2035 - Hardware/Software Programming) Created a solver for a rotating tile puzzle in C and rewrote for efficiency in MIPS assembly. Graded on assembly performance by number of instructions stored and executed and storage/stack space used.</p>
+<p>(ECE 2035 - Hardware/Software Programming) I created a solver for a rotating tile puzzle in C and rewrote for efficiency in MIPS assembly. The project was graded on assembly performance by number of instructions stored and executed and storage/stack space used compared to others in the class.</p>
 
 <h3>
 <a name="robot-self-test-on-fpga" class="anchor" href="#robot-self-test-on-fpga"><span class="octicon octicon-link"></span></a>Robot Self-Test on FPGA</h3>
 
-<p>(ECE 2031 - Digital Design Lab) Created a self-test program on a created single-stage processor for an FPGA-based robot. Used simple assembly language created for single-stage processor to verify battery level and operation of robot inputs and outputs, sonar, and motors.</p>
+<p>(ECE 2031 - Digital Design Lab) Created a self-test program on a created single-stage processor for an FPGA-based robot. Used VHDL and a simple assembly language created for a single-stage processor to verify battery level and operation of robot inputs and outputs, sonar, and motors.</p>
 
 <h3>
 <a name="java-implementation-of-basic-data-structures" class="anchor" href="#java-implementation-of-basic-data-structures"><span class="octicon octicon-link"></span></a>Java Implementation of Basic Data Structures</h3>
