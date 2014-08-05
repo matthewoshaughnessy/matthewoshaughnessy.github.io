@@ -25,13 +25,13 @@
 
 
         <p class="view">
-        <a href="resume/moshaughnessy0514.pdf">Resume (updated May 2014)</a><br>
+        <a href="resume/moshaughnessy0814.pdf">Resume (updated August 2014)</a><br>
         <a href="https://github.com/matthewoshaughnessy">GitHub Profile</a>
         <br><br>
         Jump to: <br>
-		 - <a href="#personal-projects">Personal Projects</a><br>
 		 - <a href="#extracurricular-projects">Extracurricular Projects</a><br>
 		 - <a href="#class-projects">Class Projects</a><br>
+		 - <a href="#personal-projects">Personal Projects</a><br>
         </p>
 
       </header>
@@ -40,50 +40,7 @@
 <a name="welcome" class="anchor" href="#welcome"><span class="octicon octicon-link"></span></a>Welcome!</h1>
 
 <hr><h1>
-<a name="personal-projects" class="anchor" href="#personal-projects"><span class="octicon octicon-link"></span></a>Personal Projects</h1>
-
-<h3>
-<a name="motion-controlled-rc-helicopter" class="anchor" href="#motion-controlled-rc-helicopter"><span class="octicon octicon-link"></span></a>Motion-Controlled RC Helicopter</h3>
-
-<p>My roommate and I got <a href="http://www.amazon.com/Syma-S107-S107G-Helicopter-Gyro/dp/B00F4WMAAW/ref=pd_sim_t_5?ie=UTF8&refRID=1WRZ9T5VVNX9P34X3CEY">these $20 RC Helicopters</a>. Using an IR receiver LED and an Arduino-based logic analyzer, I determined the control signals for my helicopter and created a new controller with an accelerometer and gyroscope that uses tilt controls to fly the helicopter.</p>
-
-<img src="images/motioncontrolledhelicopter.jpg" alt="Motion-controlled helicopter in action!">
-
-<ul>
-<li>Languages: Arduino, C, AVR Assembly, MATLAB/Simulink (testing/debugging)</li>
-</ul><h3>
-<a name="georgia-tech-registration-alerts" class="anchor" href="#georgia-tech-registration-alerts"><span class="octicon octicon-link"></span></a>Georgia Tech Registration Alerts</h3>
-
-<p>When my registration slot for Fall of my second year opened, every ECE class I had the prerequisites for was full. To prevent the same from happening the next semester (and, of course, avoid early morning sections), I made a command-line utility to monitor registration numbers and send me text alerts when sections opened up. My program features a custom logging utility and network analytics that export to MATLAB for visualization.</p>
-
-<a href="https://github.com/matthewoshaughnessy/gtregalert#sample-output"><img src="https://github.com/matthewoshaughnessy/gtregalert/raw/master/sampleoutput.JPG" alt="Sample Output"></a>
-
-<ul>
-<li>Source: <a href="https://github.com/matthewoshaughnessy/gtregalert#gtregalert">link</a>
-</li>
-<li>Languages: Java, MATLAB (network latency visualization), <a href="jsoup.org">jsoup</a> and <a href="https://code.google.com/p/google-voice-java/">google-voice-java</a> libraries</li>
-</ul>
-
-<h3>
-<a name="in-progress-beat-detection-tracking" class="anchor" href="#in-progress-beat-detection-tracking"><span class="octicon octicon-link"></span></a>In progress: Beat Detection &amp; Tracking</h3>
-
-<p>Taking inspiration from <a href="http://mykal.free.fr/synthesis/detectrythm.pdf">this paper</a>, I wrote a program to decect and track the beat in music. For many overlapping frames in an input song, I applied a filterbank and for each frequency band, calculated the signal envelope by applying the Hilbert transform and using a half-hanning window as a low-pass filter. Next, I applied a first-difference filter and rectified the result, giving me a signal that had large peaks at times where there was a large increase in sound energy. Finally, I applied a comb filter and selected the frequency (tempo) with the greatest output energy. In the future, I'd like to implement a Kalman filter to avoid one-off errors where the comb filter detects half the actual tempo.</p>
-
-<a href="https://github.com/matthewoshaughnessy/tempotracking"><img src="https://github.com/matthewoshaughnessy/tempotracking/blob/master/katyperryresults2.JPG?raw=true" alt="Sample Output"></a>
-
-<ul>
-<li>Source and project details: <a href="https://github.com/matthewoshaughnessy/tempotracking">link</a>
-</li>
-<li>Languages: MATLAB, Signal Processing Toolbox, DSP Toolbox
-</li>
-</ul>
-
-<hr>
-
-<h1>
 <a name="extracurricular-projects" class="anchor" href="#extracurricular-projects"><span class="octicon octicon-link"></span></a>Extracurricular Projects</h1>
-
-
 
 <h3>
 <a name="cs-1371-practice-test-question-bank" class="anchor" href="#cs-1371-practice-test-question-bank"><span class="octicon octicon-link"></span></a>CS 1371 Practice Test Question Bank</h3>
@@ -123,6 +80,8 @@
 
 <h3>
 <a name="radar-project" class="anchor" href="#radar-project"><span class="octicon octicon-link"></span></a>RADAR Project</h3>
+
+<img src="images/radar.jpg" height="200" alt="Motion-controlled helicopter in action!">
 
 <p>(ECE 4271 - Applications of DSP) RADAR returns were processed to determine the range, velocity, and radar cross-section (RCS) of multiple targets from the fast-time/slow-time matrix of a fighter jet.</p>
 
@@ -170,6 +129,45 @@
 <a name="java-implementation-of-basic-data-structures" class="anchor" href="#java-implementation-of-basic-data-structures"><span class="octicon octicon-link"></span></a>Java Implementation of Basic Data Structures</h3>
 
 <p>(CS 1332 - Data Structures &amp; Algorithms) I implemented stacks, queues, priority queues, singly and doubly linked lists, binary, balanced, and self-balancing trees, hashmaps, sorting algorithms, and graph search algorithms in Java.</p>
+
+<hr><h1>
+<a name="personal-projects" class="anchor" href="#personal-projects"><span class="octicon octicon-link"></span></a>Personal Projects</h1>
+
+<h3>
+<a name="motion-controlled-rc-helicopter" class="anchor" href="#motion-controlled-rc-helicopter"><span class="octicon octicon-link"></span></a>Motion-Controlled RC Helicopter</h3>
+
+<p>My roommate and I got <a href="http://www.amazon.com/Syma-S107-S107G-Helicopter-Gyro/dp/B00F4WMAAW/ref=pd_sim_t_5?ie=UTF8&refRID=1WRZ9T5VVNX9P34X3CEY">these $20 RC Helicopters</a>. Using an IR receiver LED and an Arduino-based logic analyzer, I determined the control signals for my helicopter and created a new controller with an accelerometer and gyroscope that uses tilt controls to fly the helicopter.</p>
+
+<img src="images/motioncontrolledhelicopter.jpg" alt="Motion-controlled helicopter in action!">
+
+<ul>
+<li>Languages: Arduino, C, AVR Assembly, MATLAB/Simulink (testing/debugging)</li>
+</ul><h3>
+<a name="georgia-tech-registration-alerts" class="anchor" href="#georgia-tech-registration-alerts"><span class="octicon octicon-link"></span></a>Georgia Tech Registration Alerts</h3>
+
+<p>When my registration slot for Fall of my second year opened, every ECE class I had the prerequisites for was full. To prevent the same from happening the next semester (and, of course, avoid early morning sections), I made a command-line utility to monitor registration numbers and send me text alerts when sections opened up. My program features a custom logging utility and network analytics that export to MATLAB for visualization.</p>
+
+<a href="https://github.com/matthewoshaughnessy/gtregalert#sample-output"><img src="https://github.com/matthewoshaughnessy/gtregalert/raw/master/sampleoutput.JPG" alt="Sample Output"></a>
+
+<ul>
+<li>Source: <a href="https://github.com/matthewoshaughnessy/gtregalert#gtregalert">link</a>
+</li>
+<li>Languages: Java, MATLAB (network latency visualization), <a href="jsoup.org">jsoup</a> and <a href="https://code.google.com/p/google-voice-java/">google-voice-java</a> libraries</li>
+</ul>
+
+<h3>
+<a name="in-progress-beat-detection-tracking" class="anchor" href="#in-progress-beat-detection-tracking"><span class="octicon octicon-link"></span></a>In progress: Beat Detection &amp; Tracking</h3>
+
+<p>Taking inspiration from <a href="http://mykal.free.fr/synthesis/detectrythm.pdf">this paper</a>, I wrote a program to decect and track the beat in music. For many overlapping frames in an input song, I applied a filterbank and for each frequency band, calculated the signal envelope by applying the Hilbert transform and using a half-hanning window as a low-pass filter. Next, I applied a first-difference filter and rectified the result, giving me a signal that had large peaks at times where there was a large increase in sound energy. Finally, I applied a comb filter and selected the frequency (tempo) with the greatest output energy. In the future, I'd like to implement a Kalman filter to avoid one-off errors where the comb filter detects half the actual tempo.</p>
+
+<a href="https://github.com/matthewoshaughnessy/tempotracking"><img src="https://github.com/matthewoshaughnessy/tempotracking/blob/master/katyperryresults2.JPG?raw=true" alt="Sample Output"></a>
+
+<ul>
+<li>Source and project details: <a href="https://github.com/matthewoshaughnessy/tempotracking">link</a>
+</li>
+<li>Languages: MATLAB, Signal Processing Toolbox, DSP Toolbox
+</li>
+</ul>
 
 <p><small>Hosted on GitHub Pages &mdash; Based on theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
 
