@@ -51,28 +51,23 @@ I'm a co-op at Georgia Tech Research Institute, where I work on realtime process
 <a name="extracurricular-projects" class="anchor" href="#extracurricular-projects"><span class="octicon octicon-link"></span></a>Extracurricular Projects</h1>
 
 <h3>
-<a name="cs-1371-practice-test-question-bank" class="anchor" href="#cs-1371-practice-test-question-bank"><span class="octicon octicon-link"></span></a>CS 1371 Practice Test Question Bank</h3>
+<a name="neural-networks-for-accessibility-device-data-classification" class="anchor" href="#neural-networks-for-accessibility-device-data-classification"><span class="octicon octicon-link"></span></a>Neural Networks for Accessibility Device Data Fusion</h3>
 
-<p>Previous versions of the CS 1371 practice question bank were difficult for students to use and instructors to update. The new question bank I created with a small team of other TAs features interactive checking of multiple choice and code tracing questions, and allows TAs to easily add and update questions with a built-in error flagging system. A MATLAB program automatically parses data from old exam questions and creates an HTML POST request to add them to the website.</p>
+<a href="images/ors-dbn-poster.jpg"><img src="images/ors-dbn-poster.jpg" height="300" align="center" alt="Data fusion with Deep Belief Networks poster"></a>
 
-<ul>
-<li>Available: <a href="http://matlabcs1371.appspot.com/">link</a>
-</li>
-<li>Languages: HMTL, CSS, JavaScript/jQuery, Python, <a href="http://jinja.pocoo.org/">Jinja2 Templating Engine</a>, Google App Engine, MATLAB</li>
-</ul><h3>
-<a name="neural-networks-for-accessibility-device-data-classification" class="anchor" href="#neural-networks-for-accessibility-device-data-classification"><span class="octicon octicon-link"></span></a>Neural Networks for Accessibility Device Data Classification</h3>
-
-<p>With my undergraduate research group, I implemented neural networks classification of data from a multi-modal accessibility device. Individually, I implemented performance-intensive portions of the training algorithm in CUDA C++. Ultimately, the data transfer time between the CPU and GPU for our resulted in execution times longer than purely-CPU execution times when tested with relatively low-dimensional handwritten digit classification, but GPU implementation will be faster for data sets with larger data sample sizes.</p>
+<p>With my undergraduate research group, I implemented neural networks for classification and fusion of data from a multi-modal accessibility device. Individually, I implemented performance-intensive portions of the training algorithm in CUDA C++. Ultimately, the data transfer time between the CPU and GPU for our resulted in execution times longer than purely-CPU execution times when tested with relatively low-dimensional handwritten digit classification, but GPU implementation will result in performance gains for data sets with higher dimensionality.</p>
 
 <ul>
 <li> <a href="images/ors-dbn-poster.jpg">Poster presented at Georgia Tech Undergraduate Research Symposium, April 2014</a>
 </li>
-<li> Languages: MATLAB, Python (using NumPy and SciPy)
+<li> Languages: MATLAB, Python (using NumPy and SciPy), CUDA
 </li>
 </ul>
 
 <h3>
 <a name="mapreduceapache-hadoop-simulator" class="anchor" href="#mapreduceapache-hadoop-simulator"><span class="octicon octicon-link"></span></a>MapReduce/Apache Hadoop Simulator</h3>
+
+<a href="images/ors-mrsim-poster.jpg"><img src="images/ors-mrsim-poster.jpg" height="300" alt="MapReduce Simulator poster"></a>
 
 <p>With my undergraduate research group, I wrote a simulator for Apache Hadoop to allow estimation of MapReduce job times before execution. I was largely responsible for the design and implementation of the distributed storage component of the simulator, which allowed users to estimate execution times of different network topologies.</p>
 
@@ -81,6 +76,17 @@ I'm a co-op at Georgia Tech Research Institute, where I work on realtime process
 </li>
 <li> Languages: Java
 </li>
+</ul>
+
+<h3>
+<a name="cs-1371-practice-test-question-bank" class="anchor" href="#cs-1371-practice-test-question-bank"><span class="octicon octicon-link"></span></a>CS 1371 Practice Test Question Bank</h3>
+
+<p>Previous versions of the CS 1371 practice question bank were difficult for students to use and instructors to update. The new question bank I created with a small team of other TAs features interactive checking of multiple choice and code tracing questions, and allows TAs to easily add and update questions with a built-in error flagging system. A MATLAB program automatically parses data from old exam questions and creates an HTML POST request to add them to the website.</p>
+
+<ul>
+<li>Available: <a href="http://matlabcs1371.appspot.com/">link</a>
+</li>
+<li>Languages: HMTL, CSS, JavaScript/jQuery, Python, <a href="http://jinja.pocoo.org/">Jinja2 Templating Engine</a>, Google App Engine, MATLAB</li>
 </ul>
 
 <hr><h1>
@@ -106,22 +112,30 @@ I'm a co-op at Georgia Tech Research Institute, where I work on realtime process
 <h3>
 <a name="seismic-oil-detection-project" class="anchor" href="#seismic-oil-detection-project"><span class="octicon octicon-link"></span></a>Seismic Oil Detection Project</h3>
 
+<img src="images/seismic.jpg" height="200" alt="Strip plot of seismic returns and deconvolved trace used to measure the earth's impulse response and locate oil">
+
 <p>(ECE 4271 - Applications of DSP) Spiking and predictive deconvolution were used to spike a wavelet to determine the impulse response of the earth. Prediction filters were used to remove echoing, and the depth of water, limestone, and oil layers in the earth were determined from the earth impulse response.</p>
 
 <h3>
 <a name="pipelined-mips-processor" class="anchor" href="#pipelined-mips-processor"><span class="octicon octicon-link"></span></a>Pipelined MIPS Processor</h3>
 
-<p>(ECE 3056 - Computer Architecture) In VHDL, I added hardware to a single-stage MIPS processor to create a five-stage pipelined processor with data forwarding and pipeline flushing to handle branch and data hazards. I used Mentor Graphics ModelSim to debug at the waveform level.</p>
+<img src="images/processor.JPG" alt="ModelSim debugging of pipelined MIPS processor">
+
+<p>(ECE 3056 - Computer Architecture) In VHDL, I added hardware to a single-stage MIPS processor to create a five-stage pipelined processor with data forwarding and pipeline flushing to handle branch and data hazards. I used Mentor Graphics ModelSim to debug at the waveform level (pictured: debugging with Mentor Graphics tools).</p>
 
 <h3>
 <a name="analog-electronics-lab" class="anchor" href="#analog-electronics-lab"><span class="octicon octicon-link"></span></a>Analog Electronics Lab</h3>
 
-<p>(ECE 3043 - Measurements, Circuits, and Microelectronics Laboratory) Designed, implemented, and tested passive and active low-, high-, band-pass, and notch filters, linear and relaxation oscillators, and BJT and MOSFET circuits. Simulated using NI Multisim and SPICE and tested using a scope and function generator.</p>
+<img src="images/quadosc.JPG" alt="SPICE Simulation of Quadrature Oscillator">
+
+<p>(ECE 3043 - Measurements, Circuits, and Microelectronics Laboratory) Designed, implemented, and tested passive and active low-, high-, band-pass, and notch filters, linear and relaxation oscillators, BJT amplifiers, and diode and MOSFET circuits. Simulated using NI Multisim and SPICE and tested using a scope and function generator (pictured: SPICE simulation of quadrature oscillator).</p>
 
 <h3>
 <a name="embedded-battleship-game" class="anchor" href="#embedded-battleship-game"><span class="octicon octicon-link"></span></a>Embedded Battleship Game</h3>
 
-<p>(ECE 2035 - Hardware/Software Programming) I created an embedded battleship player in C++ and ARM assembly on the mbed microcontroller that played the most statistically optimal game of battleship against an opponent provided to us. I used MATLAB to prototype and refine the algorithm before implementing it in C++/ARM.</p>
+<img src="images/battleship.JPG" alt="MATLAB Battleship prototype">
+
+<p>(ECE 2035 - Hardware/Software Programming) I created an embedded battleship player in C++ and ARM assembly on the mbed microcontroller that played the most statistically optimal game of battleship against an opponent provided to us. I used MATLAB to prototype and visualize the algorithm before implementing it in C++/ARM (pictured: MATLAB prototype showing probabilities of hit per tile for each turn).</p>
 
 <h3>
 <a name="efficient-tile-puzzle-solver" class="anchor" href="#efficient-tile-puzzle-solver"><span class="octicon octicon-link"></span></a>Efficient Tile Puzzle Solver</h3>
@@ -144,11 +158,9 @@ I'm a co-op at Georgia Tech Research Institute, where I work on realtime process
 <h3>
 <a name="motion-controlled-rc-helicopter" class="anchor" href="#motion-controlled-rc-helicopter"><span class="octicon octicon-link"></span></a>Motion-Controlled RC Helicopter</h3>
 
+<p>My roommate and I got <a href="http://www.amazon.com/Syma-S107-S107G-Helicopter-Gyro/dp/B00F4WMAAW/ref=pd_sim_t_5?ie=UTF8&refRID=1WRZ9T5VVNX9P34X3CEY">these $20 RC Helicopters</a>. Using an IR receiver LED and an Arduino-based logic analyzer, I determined the control signals for my helicopter and created a new controller with an accelerometer and gyroscope that uses tilt controls to fly the helicopter (pictured: IMU and IR LED connected to arduino).</p>
+
 <img src="images/motioncontrolledhelicopter.JPG" alt="Motion-activated controller">
-
-<p>My roommate and I got <a href="http://www.amazon.com/Syma-S107-S107G-Helicopter-Gyro/dp/B00F4WMAAW/ref=pd_sim_t_5?ie=UTF8&refRID=1WRZ9T5VVNX9P34X3CEY">these $20 RC Helicopters</a>. Using an IR receiver LED and an Arduino-based logic analyzer, I determined the control signals for my helicopter and created a new controller with an accelerometer and gyroscope that uses tilt controls to fly the helicopter.</p>
-
-<img src="images/motioncontrolledhelicopter.jpg" alt="Motion-controlled helicopter in action!">
 
 <ul>
 <li>Languages: Arduino, C, AVR Assembly, MATLAB/Simulink (testing/debugging)</li>
@@ -168,9 +180,9 @@ I'm a co-op at Georgia Tech Research Institute, where I work on realtime process
 <h3>
 <a name="in-progress-beat-detection-tracking" class="anchor" href="#in-progress-beat-detection-tracking"><span class="octicon octicon-link"></span></a>In progress: Beat Detection &amp; Tracking</h3>
 
-<p>Taking inspiration from <a href="http://mykal.free.fr/synthesis/detectrythm.pdf">this paper</a>, I wrote a program to decect and track the beat in music. For many overlapping frames in an input song, I applied a filterbank and for each frequency band, calculated the signal envelope by applying the Hilbert transform and using a half-hanning window as a low-pass filter. Next, I applied a first-difference filter and rectified the result, giving me a signal that had large peaks at times where there was a large increase in sound energy. Finally, I applied a comb filter and selected the frequency (tempo) with the greatest output energy. In the future, I'd like to implement a Kalman filter to avoid one-off errors where the comb filter detects half the actual tempo.</p>
-
 <a href="https://github.com/matthewoshaughnessy/tempotracking"><img src="https://github.com/matthewoshaughnessy/tempotracking/blob/master/katyperryresults2.JPG?raw=true" alt="Sample Output"></a>
+
+<p>Taking inspiration from <a href="http://mykal.free.fr/synthesis/detectrythm.pdf">this paper</a> and other sources, I wrote a program to decect and track the beat in music. For many overlapping frames in an input song, I applied a filterbank and for each frequency band, calculated the signal envelope by applying the Hilbert transform and using a half-hanning window as a low-pass filter. Next, I applied a first-difference filter and rectified the result, giving me a signal that had large peaks at times where there was a large increase in sound energy. Finally, I applied a comb filter and selected the frequency (tempo) with the greatest output energy. In the future, I'd like to implement a Kalman filter to avoid one-off errors where the comb filter detects half the actual tempo.</p>
 
 <ul>
 <li>Source and project details: <a href="https://github.com/matthewoshaughnessy/tempotracking">link</a>
