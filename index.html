@@ -25,10 +25,11 @@
 
 
         <p class="view">
-        <a href="resume/moshaughnessy0914.pdf">Resume (updated September 2014)</a><br>
+        <a href="resume/moshaughnessy0615.pdf">Resume (updated June 2015)</a><br>
         <a href="https://github.com/matthewoshaughnessy">GitHub Profile</a>
         <br><br>
         Jump to: <br>
+     - <a href="#work-projects">Work Projects</a><br>
 		 - <a href="#extracurricular-projects">Extracurricular Projects</a><br>
 		 - <a href="#class-projects">Class Projects</a><br>
 		 - <a href="#personal-projects">Personal Projects</a><br>
@@ -39,16 +40,46 @@
         <h1>
 <a name="welcome" class="anchor" href="#welcome"><span class="octicon octicon-link"></span></a>Welcome!</h1>
 
-I'm a third-year Electrical Engineering student at Georgia Tech interested in signal processing, machine learning, and computer architecture.
+I'm a fourth-year Electrical Engineering student at Georgia Tech interested in signal processing and machine learning.
 
 <br><br>
 
-I'm a co-op at Georgia Tech Research Institute, where I work on realtime processing for airborne bathymetric lidar.  On campus, I'm involved with undergraduate research, the Georgia Tech Symphony Orchestra, and as an undergraduate teaching assistant.
+I'm a co-op at Georgia Tech Research Institute, where I work on realtime processing for airborne bathymetric lidar.  On campus, I'm involved with undergraduate research, the Georgia Tech Symphony Orchestra, and as an undergraduate teaching assistant. This summer, I'm having a great time working in the DSP Algorithms group at Boeing Satellite Systems in Los Angeles, CA. 
 
 <br><br>
 
 <h1>
+<a name="work-projects" class="anchor" href="#work-projects"><span class="octicon octicon-link"></span></a>Work Projects</h1>
+
+<h3>
+<a name="gtri-work" class="anchor" href="#gtri-work"><span class="octicon octicon-link"></span></a>Real-Time Bathymetric Lidar</h3>
+
+<img src="images/bathy.jpg" height="300" align="center" alt="Test setup for the GTRI bathymetric lidar"><br><br>
+
+My first semester at GTRI, I optimized the CPU portion of the processing code to allow real-time processing (my work was an instrumental part of making GTRI the first in the bathymetric lidar industry with real-time processing!)<br><br>
+My second semester, I worked C++ processing and data collection code for a hybrid lidar, which uses an infrared geiger-mode time of flight sensor to model the water surface and allow the system to correct for the refractive effect of waves.  I also got to design simulations and post-processing algorithms in MATLAB to analyze the data we collected from our testing, which was used in technical reports delivered to the project sponsors.<br><br>
+
+<ul>
+<li> <a href="http://eosl.gtri.gatech.edu/#!/Projects/4">More about the GTRI real-time bathymetric lidar</a>
+</li>
+<li> Languages: C++, CUDA, VHDL, MATLAB
+</li>
+</ul>
+
+<hr><h1>
 <a name="extracurricular-projects" class="anchor" href="#extracurricular-projects"><span class="octicon octicon-link"></span></a>Extracurricular Projects</h1>
+
+<h3>
+<a name="convex-optimization-localization" class="anchor" href="#convex-optimization-localization"><span class="octicon octicon-link"></span></a>Convex Optimization for Localization from Binary Comparisons</h3>
+
+<img src="images/optimization.png" height="300" align="center" alt="Visualization of binary comparisons and resulting cost function for optimization problem">
+
+<p>Many localization approaches in machine learning (e.g., classical multidimensional scaling) recover the locations of objects in some space given a dissimilarity matrix--for example, recovering a map from a list of distances between cities.  My research deals with a variant of this problem where only <i>binary</i> comparisons between objects are known (there is evidence that many real-life applications, such as consumer preference, are much more accurate when only a binary choice between two objects is offered).  I've formulated the problem as a convex optimization problem, and have developed optimization algorithms in MATLAB to solve it.  I've created simulations for the Georgia Tech high performance computing cluster to develop "rules of thumb" of parameter choices and quantify performance trade-offs between different optimization algorithms.</p>
+
+<ul>
+<li> Topics: Optimization theory, Machine learning; Language: MATLAB
+</li>
+</ul>
 
 <h3>
 <a name="neural-networks-for-accessibility-device-data-classification" class="anchor" href="#neural-networks-for-accessibility-device-data-classification"><span class="octicon octicon-link"></span></a>Neural Networks for Accessibility Device Data Fusion</h3>
