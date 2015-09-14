@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Matthew O&#39;Shaughnessy</title>
+    <title>Matt O&#39;Shaughnessy</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -25,7 +25,7 @@
 
 
         <p class="view">
-        <a href="resume/moshaughnessy0615.pdf">Resume (updated June 2015)</a><br>
+        <a href="resume/moshaughnessy0915.pdf">Resume (updated September 2015)</a><br>
         <a href="https://github.com/matthewoshaughnessy">GitHub Profile</a>
         <br><br>
         Jump to: <br>
@@ -48,7 +48,7 @@ I'm a co-op at Georgia Tech Research Institute, where I work on realtime process
 
 <br><br>
 
-This summer, I'm having a great time working in the DSP Algorithms group at Boeing Satellite Systems in Los Angeles, CA.
+This summer, I had a great time working in the DSP Algorithms group at Boeing Satellite Systems in Los Angeles, CA.
 
 <br><br>
 
@@ -60,14 +60,14 @@ This summer, I'm having a great time working in the DSP Algorithms group at Boei
 
 <img src="images/bathy.jpg" height="300" align="center" alt="Test setup for the GTRI bathymetric lidar"><br><br>
 
-My first semester at GTRI, I optimized the CPU portion of the processing code to allow real-time processing (my work was an instrumental part of making GTRI the first in the bathymetric lidar industry with real-time processing!)<br><br>
+My first semester at GTRI, I optimized and multithreaded the CPU portion of the processing code to allow real-time processing (my work was an instrumental part of making GTRI the first in the bathymetric lidar industry with real-time processing!)  I also did significant debugging to give us an operational demo, which gave me a great understanding of how the entire system worked.<br><br>
 My second semester, I worked on C++ processing and data collection code for a hybrid lidar, which uses an infrared geiger-mode time of flight sensor to model the water surface and allow the system to correct for the refractive effect of waves.  I also got to design signal processing algorithms in MATLAB to analyze the data we collected from our testing, which was used in technical reports delivered to the project sponsors.<br><br>
+(Pictured: our lidar set up for testing!)<br><br>
 
 <ul>
-<li> <a href="http://eosl.gtri.gatech.edu/#!/Projects/4">More about the GTRI real-time bathymetric lidar</a>
-</li>
-<li> Languages: C++, CUDA, VHDL, MATLAB
-</li>
+<li> <a href="http://eosl.gtri.gatech.edu/#!/Projects/4">More about the GTRI real-time bathymetric lidar</a></li>
+<li> Topics: Lidar, signal processing, CPU/GPU/FPGA software development
+<li> Languages: MATLAB, C++, CUDA, VHDL</li>
 </ul>
 
 <hr><h1>
@@ -78,11 +78,11 @@ My second semester, I worked on C++ processing and data collection code for a hy
 
 <img src="images/optimization.png" height="300" align="center" alt="Visualization of binary comparisons and resulting cost function for optimization problem">
 
-<p>Many localization approaches in machine learning (e.g., classical multidimensional scaling) recover the locations of objects in some space given a dissimilarity matrix--for example, recovering a map from a list of distances between cities.  My research deals with a variant of this problem where only <i>binary</i> comparisons between objects are known (there is evidence that many real-life applications, such as consumer preference, are much more accurate when only a binary choice between two objects is offered).  I've formulated the problem as a convex optimization problem, and have developed optimization algorithms in MATLAB to solve it.  I've created simulations for the Georgia Tech high performance computing cluster to develop "rules of thumb" of parameter choices and quantify performance trade-offs between different optimization algorithms.</p>
+<p>Many localization approaches in machine learning (e.g., classical multidimensional scaling) recover the locations of objects in some space given a dissimilarity matrix--for example, recovering a map from a list of distances between cities.  My research deals with a variant of this problem where only <i>binary</i> comparisons between objects are known (there is evidence that many real-life applications, such as consumer preference, are much more accurate when only a binary choice between two objects is offered).  I've formulated the problem as a convex optimization problem, and have developed optimization algorithms in MATLAB to solve it.  I've created simulations for the Georgia Tech high performance computing cluster to develop "rules of thumb" of parameter choices and quantify performance trade-offs between different optimization algorithms (pictured: visualization of the binary comparisons used for reconstruction and the resulting optimization cost function).</p>
 
 <ul>
-<li> Topics: Optimization theory, Machine learning; Language: MATLAB
-</li>
+<li> Topics: Optimization theory, machine learning</li>
+<li> Language: MATLAB</li>
 </ul>
 
 <h3>
@@ -90,13 +90,12 @@ My second semester, I worked on C++ processing and data collection code for a hy
 
 <a href="images/ors-dbn-poster.jpg"><img src="images/ors-dbn-poster.jpg" height="300" align="center" alt="Data fusion with Deep Belief Networks poster"></a>
 
-<p>With my undergraduate research group, I implemented neural networks for classification and fusion of data from a multi-modal accessibility device. Individually, I implemented performance-intensive portions of the training algorithm in CUDA C++. Ultimately, the data transfer time between the CPU and GPU for our resulted in execution times longer than purely-CPU execution times when tested with relatively low-dimensional handwritten digit classification, but GPU implementation will result in performance gains for data sets with higher dimensionality.</p>
+<p>With my undergraduate research group, I implemented neural networks for classification and fusion of data from a multi-modal accessibility device. Individually, I implemented performance-intensive portions of the training algorithm in CUDA C++. Ultimately, the data transfer time between the CPU and GPU for our resulted in execution times longer than purely-CPU execution times when tested with relatively low-dimensional handwritten digit classification, but GPU implementation will result in performance gains for data sets with higher dimensionality (pictured: our poster that won 3rd place at the ORS research competition!)</p>
 
 <ul>
-<li> <a href="images/ors-dbn-poster.jpg">Poster presented at Georgia Tech Undergraduate Research Symposium, April 2014</a>
-</li>
-<li> Languages: MATLAB, Python (using NumPy and SciPy), CUDA
-</li>
+<li> <a href="images/ors-dbn-poster.jpg">Poster presented at Georgia Tech Undergraduate Research Symposium, April 2014</a></li>
+<li> Topics: Machine learning, GPU programming</li>
+<li> Languages: MATLAB, Python (using NumPy and SciPy), CUDA</li>
 </ul>
 
 <h3>
@@ -104,19 +103,19 @@ My second semester, I worked on C++ processing and data collection code for a hy
 
 <a href="images/ors-mrsim-poster.jpg"><img src="images/ors-mrsim-poster.jpg" height="300" alt="MapReduce Simulator poster"></a>
 
-<p>With my undergraduate research group, I wrote a simulator for Apache Hadoop to allow estimation of MapReduce job times before execution. I was largely responsible for the design and implementation of the distributed storage component of the simulator, which allowed users to estimate execution times of different network topologies.</p>
+<p>With my undergraduate research group, I wrote a simulator for Apache Hadoop to allow estimation of MapReduce job times before execution. I was largely responsible for the design and implementation of the distributed storage component of the simulator, which allowed users to estimate execution times of different network topologies (pictured: our poster that won 2nd place at the ORS research competition!)</p>
 
 <ul>
 <li> <a href="images/ors-mrsim-poster.jpg">Poster presented at ORS Research Competition, April 2013</a>
 </li>
-<li> Languages: Java
-</li>
+<li> Topics: Distributed computing, MapReduce/Hadoop, software development</li>
+<li> Languages: Java</li>
 </ul>
 
 <h3>
 <a name="cs-1371-practice-test-question-bank" class="anchor" href="#cs-1371-practice-test-question-bank"><span class="octicon octicon-link"></span></a>CS 1371 Practice Test Question Bank</h3>
 
-<p>Previous versions of the CS 1371 practice question bank were difficult for students to use and instructors to update. The new question bank I created with a small team of other TAs features interactive checking of multiple choice and code tracing questions, and allows TAs to easily add and update questions with a built-in error flagging system. A MATLAB program automatically parses data from old exam questions and creates an HTML POST request to add them to the website.</p>
+<p>Previous versions of the CS 1371 practice question bank were difficult for students to use and instructors to update. The new question bank I lead development of features interactive checking of multiple choice and code tracing questions, and allows TAs to easily add and update questions with a built-in error flagging system. A MATLAB program automatically parses data from old exam questions and adds them to the website.</p>
 
 <ul>
 <li>Available: <a href="http://matlabcs1371.appspot.com/">link</a>
@@ -132,38 +131,38 @@ My second semester, I worked on C++ processing and data collection code for a hy
 
 <img src="images/radar.jpg" height="200" alt="Motion-controlled helicopter in action!">
 
-<p>(ECE 4271 - Applications of DSP) RADAR returns were processed to determine the range, velocity, and radar cross-section (RCS) of multiple targets from the fast-time/slow-time matrix of a fighter jet.</p>
+<p>(ECE 4271 - Applications of DSP) I developed the signal processing algorithms to analyze RADAR returns to determine the range, velocity, and radar cross-section (RCS) of multiple targets from the fast-time/slow-time matrix of a fighter jet.</p>
 
 <h3>
 <a name="speech-enhancement-project" class="anchor" href="#speech-enhancement-project"><span class="octicon octicon-link"></span></a>Speech Enhancement Project</h3>
 
-<p>(ECE 4271 - Applications of DSP) Used short-term Fourier analysis of microphone array data to determine the location of a speaker in a noisy room. After the location of the speaker was determined, MVDR Beamforming was used to enhance the speech signal. Linear prediction was used to verify formants of the original signal matched formants of the enhanced signal.</p>
+<p>(ECE 4271 - Applications of DSP) I used short-term Fourier analysis of signals from a microphone array to determine the location of a speaker in a noisy room. After the location of the speaker was determined, I used MVDR Beamforming to enhance the speech signal and linear prediction to verify formants of the original signal matched formants of the enhanced signal.</p>
 
 <h3>
 <a name="echocardiogram-tracking-project" class="anchor" href="#echocardiogram-tracking-project"><span class="octicon octicon-link"></span></a>Echocardiogram Tracking Project</h3>
 
-<p>(ECE 4271 - Applications of DSP) The two-dimensional cross-correlation was used to track the movement of a patient's interventricular septum from B-mode ECG images.</p>
+<p>(ECE 4271 - Applications of DSP) I tracked the movement of a patient's interventricular septum from ECG video with two-dimensional cross-correlations.</p>
 
 <h3>
 <a name="seismic-oil-detection-project" class="anchor" href="#seismic-oil-detection-project"><span class="octicon octicon-link"></span></a>Seismic Oil Detection Project</h3>
 
 <img src="images/seismic.jpg" height="200" alt="Strip plot of seismic returns and deconvolved trace used to measure the earth's impulse response and locate oil">
 
-<p>(ECE 4271 - Applications of DSP) Spiking and predictive deconvolution were used to spike a wavelet to determine the impulse response of the earth. Prediction filters were used to remove echoing, and the depth of water, limestone, and oil layers in the earth were determined from the earth impulse response.</p>
+<p>(ECE 4271 - Applications of DSP) I used spiking and predictive deconvolution were to spike a wavelet to determine the impulse response of the earth. I then used prediction filters to remove echoing, and determine the depth of water, limestone, and oil layers in the earth.</p>
 
 <h3>
 <a name="pipelined-mips-processor" class="anchor" href="#pipelined-mips-processor"><span class="octicon octicon-link"></span></a>Pipelined MIPS Processor</h3>
 
 <img src="images/processor.JPG" alt="ModelSim debugging of pipelined MIPS processor">
 
-<p>(ECE 3056 - Computer Architecture) In VHDL, I added hardware to a single-stage MIPS processor to create a five-stage pipelined processor with data forwarding and pipeline flushing to handle branch and data hazards. I used Mentor Graphics ModelSim to debug at the waveform level (pictured: debugging with Mentor Graphics tools).</p>
+<p>(ECE 3056 - Computer Architecture) In VHDL, I added hardware to a single-stage MIPS processor to create a five-stage pipelined processor.  I added data forwarding and pipeline flushing features to handle branch and data hazards. Mentor Graphics ModelSim was invaluable for debugging at the waveform level (pictured: debugging my processor with Mentor Graphics tools).</p>
 
 <h3>
 <a name="analog-electronics-lab" class="anchor" href="#analog-electronics-lab"><span class="octicon octicon-link"></span></a>Analog Electronics Lab</h3>
 
 <img src="images/quadosc.JPG" alt="SPICE Simulation of Quadrature Oscillator">
 
-<p>(ECE 3043 - Measurements, Circuits, and Microelectronics Laboratory) Designed, implemented, and tested passive and active low-, high-, band-pass, and notch filters, linear and relaxation oscillators, BJT amplifiers, and diode and MOSFET circuits. Simulated using NI Multisim and SPICE and tested using a scope and function generator (pictured: SPICE simulation of quadrature oscillator).</p>
+<p>(ECE 3043 - Measurements, Circuits, and Microelectronics Laboratory) I designed, created with a breadboard, and tested passive and active low-, high-, band-pass, and notch filters, linear and relaxation oscillators, BJT amplifiers, and diode and MOSFET circuits. I simulated each circuit using NI Multisim and SPICE, and tested my implementation using a scope and function generator (pictured: SPICE simulation of quadrature oscillator).</p>
 
 <h3>
 <a name="embedded-battleship-game" class="anchor" href="#embedded-battleship-game"><span class="octicon octicon-link"></span></a>Embedded Battleship Game</h3>
@@ -222,11 +221,11 @@ My second semester, I worked on C++ processing and data collection code for a hy
 <ul>
 <li>Source and project details: <a href="https://github.com/matthewoshaughnessy/tempotracking">link</a>
 </li>
-<li>Languages: MATLAB, Signal Processing Toolbox, DSP Toolbox
+<li>Languages: MATLAB (heavily used Signal Processing and DSP Toolboxes)
 </li>
 </ul>
 
-<p><small>Hosted on GitHub Pages &mdash; Based on theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+<p><small>Based on theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
 
 
       </section>
